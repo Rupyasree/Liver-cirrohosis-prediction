@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pickle
 import numpy as np
@@ -41,7 +42,7 @@ with open("normalizer.pkl", "rb") as f:
       prediction = model.predict(input_scaled)
 
       if prediction[0] == 1:
-              st.error("⚠️ High Risk: Liver Cirrhosis Likely")
+        st.error("⚠️ High Risk: Liver Cirrhosis Likely")
       else:
-              st.success("✅ Low Risk: No Liver Cirrhosis Detected")
-              
+        st.success("✅ Low Risk: No Liver Cirrhosis Detected")
+                                                                                                                          
